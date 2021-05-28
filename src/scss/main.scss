@@ -1,0 +1,50 @@
+@import 'fonts';
+@import 'settings';
+
+.header {
+    background: url('../img/header/bg_header.png') no-repeat;
+    background-size: cover;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 0;
+    &__list, &__list-icon{
+        display: flex;        
+        list-style: none;
+        &__item{
+            padding: 0 20px;
+        }
+        &__item-icon{
+            padding: 0 10px;            
+        }
+        &__link{
+            text-transform: uppercase;
+            font-size: 14px;
+            color:#ffff; 
+            &:hover{
+                text-transform: uppercase;
+                color:#2bd2f2;
+            }
+        }
+    }
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1,h2,h6 {
+            color:#ffff;
+            margin: 15px 0;
+        }
+        &__btn {
+            max-width: 180px;
+        }
+    }    
+}

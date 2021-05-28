@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;    
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    overflow-anchor: none;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-white);
+    scroll-behavior: smooth;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1 {
+      font-size: 55px;
+  }
+
+  h2 {
+      font-size: 50px;
+      font-weight: 400;
+  }
+
+  h6 {
+      font-size: 24px;
+      font-weight: 400;
+  }
+
+  button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  button:hover {
+    opacity: .8;
+  }
