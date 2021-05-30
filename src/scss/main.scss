@@ -72,3 +72,146 @@
         margin:0 auto;
     }
 }
+
+.about_our_app {
+    &__main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        // align-content: ;
+    }
+    &__main-text {
+        max-width: 545px;        
+    }
+    &__main-text>* {
+        margin: 30px 0;        
+    }
+    &__main-img {
+        padding: 0 200px;
+    }
+}
+
+.how_it_works {
+    &__main {
+        display: flex; 
+        justify-content: center;       
+    }
+    &__main-badges {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        max-width: 650px;        
+        text-align: center;
+        margin-right: 65px; 
+        margin-bottom: 60px;       
+    }
+    &__main-badge {
+        max-width: 270px;
+        margin-bottom: 50px;
+    }
+    &__main-badge>* {
+        margin: 10px 0;
+    }
+}
+
+.template_features {
+    &__main {        
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    &__badge {    
+        text-align: center;    
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0.557px 3.961px 20px 0px rgba(152, 152, 152, 0.3);            
+        width: 398px;   
+        padding: 50px 0;
+        margin: 5px 0;              
+    }
+    &__badge>* {
+        margin: 10px 0 ;
+    }
+    &__badge-text {
+        max-width: 318px;
+        margin: 0 auto;
+
+    }
+}
+
+.app_screenshot {
+    &__container {
+        max-width: 1290px;
+        margin: 120px auto;
+    }
+    &__main {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+    }
+    &__main>* {
+        margin: 10px 0;
+    }
+}
+
+.customer_reviews {
+    &__slider {
+        display: flex;
+        justify-content: center;
+    }
+    &__slide {
+        display: flex;
+    }
+    &__slide-text {
+        max-width: 320px;
+        text-align: center;
+        padding: 50px 0 0;
+    }
+    &__slider-indicator {
+        text-align: center;
+        padding: 90px 0 0;
+    }
+}
+
+.pricing_plan {
+    &__plates {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__plate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(250, 249, 249);
+    }
+    &__plate-top {
+        background-color: rgb(7, 219, 238);
+        padding: 20px 85px;
+        text-align: center;
+    }
+    &__plate-items {        
+        list-style: none;
+        text-align: center;
+        padding: 0 57px;
+        
+    }
+    &__plate-item {               
+        margin: 20px 0;
+    }
+    &__btn {
+        margin: 20px 0;
+        background-color:#832cce;
+        padding: 8px 40px;
+        max-width: 162px;
+    }
+    &__slider-indicator {
+        text-align: center;
+        margin: 30px 0 0;
+        
+    }
+
+
+}
+
