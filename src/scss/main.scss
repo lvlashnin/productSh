@@ -11,22 +11,28 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 40px 0;
-    &__list, &__list-icon{
-        display: flex;        
+
+    &__list,
+    &__list-icon {
+        display: flex;
         list-style: none;
-        &__item{
+
+        &__item {
             padding: 0 20px;
         }
-        &__item-icon{
-            padding: 0 10px;            
+
+        &__item-icon {
+            padding: 0 10px;
         }
-        &__link{
+
+        &__link {
             text-transform: uppercase;
             font-size: 14px;
-            color:#ffff; 
-            &:hover{
+            color: #ffff;
+
+            &:hover {
                 text-transform: uppercase;
-                color:#2bd2f2;
+                color: #2bd2f2;
             }
         }
     }
@@ -36,18 +42,23 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
     &__text-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        h1,h2,h6 {
-            color:#ffff;
+
+        h1,
+        h2,
+        h6 {
+            color: #ffff;
             margin: 15px 0;
         }
+
         &__btn {
             max-width: 180px;
         }
-    }    
+    }
 }
 
 .advanteges {
@@ -55,21 +66,24 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 150px 0;
+        margin: 80px 0;
     }
-    &__badge {        
-        text-align: center;        
+
+    &__badge {
+        text-align: center;
         background-color: rgb(255, 255, 255);
-        box-shadow: 0.557px 3.961px 20px 0px rgba(152, 152, 152, 0.3);                      
+        box-shadow: 0.557px 3.961px 20px 0px rgba(152, 152, 152, 0.3);
         width: 378px;
-        height: 336px;            
-    }    
+        height: 336px;
+    }
+
     &__badge-img {
         margin: 65px 0 30px;
     }
+
     &__badge-text {
         max-width: 335px;
-        margin:0 auto;
+        margin: 0 auto;
     }
 }
 
@@ -80,12 +94,15 @@
         flex-wrap: wrap;
         // align-content: ;
     }
+
     &__main-text {
-        max-width: 545px;        
+        max-width: 545px;
     }
+
     &__main-text>* {
-        margin: 30px 0;        
+        margin: 30px 0;
     }
+
     &__main-img {
         padding: 0 200px;
     }
@@ -93,45 +110,53 @@
 
 .how_it_works {
     &__main {
-        display: flex; 
-        justify-content: center;       
+        display: flex;
+        justify-content: center;
     }
+
     &__main-badges {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
-        max-width: 650px;        
+        max-width: 650px;
         text-align: center;
-        margin-right: 65px; 
-        margin-bottom: 60px;       
+        margin-right: 65px;
+        margin-bottom: 60px;
     }
+
     &__main-badge {
         max-width: 270px;
         margin-bottom: 50px;
     }
+
     &__main-badge>* {
         margin: 10px 0;
     }
 }
 
 .template_features {
-    &__main {        
+    background: #f3f3f3;
+
+    &__main {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        
+
     }
-    &__badge {    
-        text-align: center;    
+
+    &__badge {
+        text-align: center;
         background-color: rgb(255, 255, 255);
-        box-shadow: 0.557px 3.961px 20px 0px rgba(152, 152, 152, 0.3);            
-        width: 398px;   
+        box-shadow: 0.557px 3.961px 20px 0px rgba(152, 152, 152, 0.3);
+        width: 398px;
         padding: 50px 0;
-        margin: 5px 0;              
+        margin: 5px 0;
     }
+
     &__badge>* {
-        margin: 10px 0 ;
+        margin: 10px 0;
     }
+
     &__badge-text {
         max-width: 318px;
         margin: 0 auto;
@@ -144,6 +169,7 @@
         max-width: 1290px;
         margin: 120px auto;
     }
+
     &__main {
         display: flex;
         justify-content: space-around;
@@ -151,6 +177,7 @@
         align-items: center;
         align-content: center;
     }
+
     &__main>* {
         margin: 10px 0;
     }
@@ -161,14 +188,17 @@
         display: flex;
         justify-content: center;
     }
+
     &__slide {
         display: flex;
     }
+
     &__slide-text {
         max-width: 320px;
         text-align: center;
         padding: 50px 0 0;
     }
+
     &__slider-indicator {
         text-align: center;
         padding: 90px 0 0;
@@ -176,42 +206,212 @@
 }
 
 .pricing_plan {
+    background: #f3f3f3;
+
     &__plates {
         display: flex;
         justify-content: space-between;
     }
+
     &__plate {
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: rgb(250, 249, 249);
+        position: relative;
     }
+
+    &__plate::after {
+        content: url('../img/pricing_plan/notebook_part.png');
+        position: absolute;
+        top: 85px;
+        left: 30px;
+    }
+
+    &__plate::before {
+        content: url('../img/pricing_plan/notebook_part.png');
+        position: absolute;
+        top: 85px;
+        left: 210px;
+    }
+
     &__plate-top {
         background-color: rgb(7, 219, 238);
         padding: 20px 85px;
         text-align: center;
+        color:#ffff;
     }
-    &__plate-items {        
+
+    &__plate-items {
         list-style: none;
         text-align: center;
         padding: 0 57px;
-        
     }
-    &__plate-item {               
+
+    &__plate-item {
         margin: 20px 0;
+        position: relative;
+        color:#555351;
     }
+
+    &__plate-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #555351;
+        // background: #c4c1be;  
+    }
+
     &__btn {
-        margin: 20px 0;
-        background-color:#832cce;
+        margin: 35px 0 20px;
+        background-color: #832cce;
         padding: 8px 40px;
         max-width: 162px;
+        color:#ffff;
     }
+
     &__slider-indicator {
         text-align: center;
         margin: 30px 0 0;
-        
+
     }
 
 
 }
 
+.f_a_q {
+    &__items {
+        margin: 0 auto;
+        max-width: 780px;
+        list-style: none;
+        padding: 0px 0 80px 0;
+    }
+
+    &__item-question {
+        font-size: 20px;
+        color: #464545;
+        background-color: rgb(243, 243, 243);
+        box-shadow: 0px 5px 11px 0px rgba(99, 99, 99, 0.24);
+        padding: 15px 0 15px 10px;
+        margin: 2px 0;
+    }
+
+    &__item-answer {
+        font-size: 16px;
+        color: #464545;
+        padding: 10px 0;
+
+        &--active {
+            display: block;
+        }
+
+        &--hidden {
+            display: none;
+        }
+    }
+}
+
+.download_the_app_now {
+    background: #07dbee;
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0 0 0;
+    }
+
+    &__text {
+        max-width: 590px;
+
+        &>* {
+            margin: 25px 0;
+            color: #ffff;
+            line-height: 24px;
+        }
+    }
+
+}
+
+.blog {
+    background: #f3f3f3;
+    padding-bottom: 40px;
+
+    &__main {
+        display: flex;
+        background: #ffff;
+        padding: 10px 0 10px 10px;
+    }
+
+    &__text {
+        max-width: 500px;
+        padding: 45px 0 15px 30px;
+
+        &>* {
+            margin: 25px 0;
+        }
+    }
+
+    &__date {
+        color: #07dbee;
+    }
+
+    &__btn {
+        background-color: #832cce;
+        color: #ffff;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+}
+
+.our_partner {
+    &__slider {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+
+    &__slider-indicator {
+        text-align: center;
+        padding: 30px;
+    }
+}
+
+.footer {
+    background: #07dbee;
+    padding: 20px 0 30px 0;
+
+    &__item {
+        color: #ffff;
+        max-width: 785px;
+        text-align: center;
+        margin: 20px auto;
+
+    }
+
+    &__input {
+        text-align: center;
+        margin: 40px auto;
+        max-width: 500px;
+        position: relative;
+        &-area {
+            padding: 15px 35px;
+            color: #a6a6a6;
+            font-size: 30px;
+            border-radius: 30px;
+            border: none;         
+                     
+        }
+
+        &-btn {
+            position: absolute;
+            top: 15px;
+            right: 60px;
+        }
+
+    }
+}

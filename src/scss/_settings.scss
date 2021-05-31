@@ -25,6 +25,10 @@ html {
     text-decoration: none;
     color: inherit;
   }
+
+  p{
+    color:#787b7b;
+  }
   
   h1 {
       font-size: 55px;
@@ -37,7 +41,7 @@ html {
 
   h3 {
       font-size: 36px;
-      text-transform: uppercase;
+      text-transform: capitalize;
   }
 
   h4 {
@@ -71,11 +75,33 @@ html {
 
   .container {
     max-width: 1240px;
-    margin: 120px auto;
+    margin: 0px auto;
+    padding: 20px 0;
     &__top{
       max-width: 680px;
       margin: 80px auto;
       text-align: center;
+      &-img{
+        position: relative;
+        &::after{
+        content: '';
+        height: 1px;
+        width: 30px;
+        background: #07dbee;
+        top: 10px;
+        left: 290px;        
+        position: absolute;
+        }
+        &::before{
+          content: '';
+          height: 1px;
+          width: 30px;
+          background: #07dbee;
+          top: 10px;
+          left: 356px;        
+          position: absolute;
+          }
+      }     
     }
     &__top > *{
       margin: 5px 0;
